@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "PHPLinq",
+      "DisplayName": "PHPLinq"
+    },
+    "ClosedComment": "Fixed in SVN",
+    "ClosedDate": "2008-02-04T04:34:24.273-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "LinqToObjects initiator fallback should be \"linqfrom\"",
+    "LastUpdatedDate": "2013-05-16T03:12:39.273-07:00",
+    "PlannedForRelease": "PHPLinq 0.2.0",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "PHPLinq",
+    "ReportedDate": "2008-02-04T04:29:50.557-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "LinqToObjects initiator fallback should be \"linqfrom\"",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 761
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

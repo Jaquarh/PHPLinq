@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "625967",
+    "ThreadId": "260924",
+    "Html": "\r\n<p><strong>Fatal error</strong>: require_once() [<a href=\"http://localhost/phptest/function.require\">function.require</a>]: Failed opening required 'Zend/Db/Adapter/Abstract.php' (include_path='.;C:\\xampp\\php\\PEAR;C:\\xampp\\htdocs\\phptest\\sites\\all\\modules\\codelibrary\\app_code\\linq')\r\n in<strong>C:\\xampp\\htdocs\\phptest\\sites\\all\\modules\\codelibrary\\app_code\\linq\\PHPLinq\\Adapter\\Abstract.php</strong>&nbsp;on line&nbsp;<strong>33</strong></p>\r\n<p>&nbsp;</p>\r\n<p><strong>how to resolve that</strong></p>\r\n<p>&nbsp;</p>\r\n<p><strong>regards sathish.</strong></p>\r\n",
+    "PostedDate": "2011-06-10T06:47:23.127-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "627350",
+    "ThreadId": "260924",
+    "Html": "<p>The resolution is in the error message: try including Zend framework in your code?</p>",
+    "PostedDate": "2011-06-14T01:13:38.39-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "PHPLinq",
+      "DisplayName": "PHPLinq"
+    },
+    "ClosedComment": "Fixed in SVN",
+    "ClosedDate": "2008-12-26T05:59:32.743-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Implement ILinqProvider for Zend_Db_Table, allowing syntax like:\n \n$result = from('$employee')->in($employeeTable)\n\t\t\t->where('$employee => strlen($employee->Name) == 4')\n\t\t\t->skip(1)->take(2)\n\t\t\t->select('$employee');\n \necho PHPLinq_LinqToZendDb::getLastQueryString() . \"\\r\\n\";\nprint_r($result);",
+    "LastUpdatedDate": "2013-05-16T03:12:36.437-07:00",
+    "PlannedForRelease": "PHPLinq 0.4.0",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "PHPLinq",
+    "ReportedDate": "2008-12-26T05:57:14.71-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Implement ILinqProvider for Zend_Db_Table",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 3535
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

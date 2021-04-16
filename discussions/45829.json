@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "153001",
+    "ThreadId": "45829",
+    "Html": "i've not use phplinq only seen examples and i've found that it is quite interesting and useful. There are only select statements on examples... so can you help me how to connect to mysql database and use insert, delete and update query...<br>\r\n",
+    "PostedDate": "2009-01-31T22:50:08.32-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "153194",
+    "ThreadId": "45829",
+    "Html": "PHPLinq is all about querying data on ANY data source (array, XML, database, ...). The underlying connection, i.e. on a Zend_Db_Table, can be used for insert/update/delete, PHPLinq only for selection.\r\n",
+    "PostedDate": "2009-02-01T22:50:35.453-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "414712",
+    "ThreadId": "45829",
+    "Html": "<p>OK, but for people like sarbesh and I new to this, if we push the PHP LINQ to our server running MySQL a code snippet or explanation of how we can use LINQ to connect to our MySQL Database and run use PHP LINQ on it would be very helpful/appreciated.</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks</p>",
+    "PostedDate": "2010-03-05T10:59:12.51-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

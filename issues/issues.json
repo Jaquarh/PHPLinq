@@ -1,0 +1,102 @@
+[
+  {
+    "Id": 485,
+    "Title": "Initial release"
+  },
+  {
+    "Id": 756,
+    "Title": "Implement takeWhile / skipWhile"
+  },
+  {
+    "Id": 757,
+    "Title": "Implement distinct"
+  },
+  {
+    "Id": 758,
+    "Title": "Implement ofType"
+  },
+  {
+    "Id": 759,
+    "Title": "Implement reverse"
+  },
+  {
+    "Id": 760,
+    "Title": "Implement First / FirstOrDefault / Last / LastOrDefault"
+  },
+  {
+    "Id": 761,
+    "Title": "LinqToObjects initiator fallback should be \"linqfrom\""
+  },
+  {
+    "Id": 762,
+    "Title": "Compile expressions on execute"
+  },
+  {
+    "Id": 787,
+    "Title": "Implement any / all / contains"
+  },
+  {
+    "Id": 788,
+    "Title": "Implement elementAt / count"
+  },
+  {
+    "Id": 789,
+    "Title": "Implement concat"
+  },
+  {
+    "Id": 790,
+    "Title": "Create PEAR package in release process"
+  },
+  {
+    "Id": 827,
+    "Title": "Implement parameterless select()"
+  },
+  {
+    "Id": 1109,
+    "Title": "Implement from()->in() initiator"
+  },
+  {
+    "Id": 1595,
+    "Title": "Implement join operator"
+  },
+  {
+    "Id": 2425,
+    "Title": "Implement sum, min, max, average"
+  },
+  {
+    "Id": 2426,
+    "Title": "Implement single, singleOrDefault"
+  },
+  {
+    "Id": 2711,
+    "Title": "\"Apache HTTP Server has stopped working\" when trying to run 11-join.php"
+  },
+  {
+    "Id": 3535,
+    "Title": "Implement ILinqProvider for Zend_Db_Table"
+  },
+  {
+    "Id": 3615,
+    "Title": "LinqToZendDB - Last query should be returned using callback function"
+  },
+  {
+    "Id": 3870,
+    "Title": "Investigate use of closures in PHPLinq"
+  },
+  {
+    "Id": 6286,
+    "Title": "Allow objects that implement Traversable to be passed to LinqToObjects"
+  },
+  {
+    "Id": 7960,
+    "Title": "elementAt (LinqToObjects) assumes it is dealing with an array of arrays"
+  },
+  {
+    "Id": 8834,
+    "Title": "unsignedShort sorted like a string instead of a number..."
+  },
+  {
+    "Id": 9060,
+    "Title": "set property name in select"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "186118",
+    "ThreadId": "55137",
+    "Html": "Hi Guys<br>\r\n<br>\r\nHas anyone tried to use this with CodeIgniter? If so, can you please suggest how to configure is right? <br>\r\n<br>\r\n$autoload['libraries'] = array('database','PHPLinq'); <br>\r\n<br>\r\nis in my autoload.php<br>\r\n<br>\r\nThanks<br>\r\n<br>\r\n",
+    "PostedDate": "2009-05-02T08:26:27.657-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "279403",
+    "ThreadId": "55137",
+    "Html": "<p>Could tell me where do you get this PHPLinq library? I tried to look all over the CI site and haven't found anywhere.</p>\r\n<p>The way you wrote their is right, although private libraries could cause some problem. It means that the autoload, if I am no mistaken, search for keyword outside the application folder, except with plugins. But you should look at the user_guide to make this sure.</p>",
+    "PostedDate": "2010-01-20T03:37:48.597-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "279435",
+    "ThreadId": "55137",
+    "Html": "<p>Sources are at <a href=\"http://phplinq.codeplex.com/SourceControl/list/changesets\">http://phplinq.codeplex.com/SourceControl/list/changesets</a></p>",
+    "PostedDate": "2010-01-20T05:05:30.22-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

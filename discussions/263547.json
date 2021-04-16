@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "635973",
+    "ThreadId": "263547",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>I've a problem to understand under which licence the library is published.</p>\r\n<p>On this site, it is claimed to be licenced under GPL. However, in source file, the licence template applied is LGPL.</p>\r\n<p>Which one is the correct licence ?</p>\r\n<p>Thanks in advance,</p>\r\n",
+    "PostedDate": "2011-07-01T05:39:58.347-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "636809",
+    "ThreadId": "263547",
+    "Html": "<p>Should be LGPL, fixing it here on the website.</p>",
+    "PostedDate": "2011-07-03T23:12:43.097-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

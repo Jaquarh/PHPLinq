@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "LinqToObjects",
+      "DisplayName": "LinqToObjects"
+    },
+    "ClosedComment": "Fixed in SVN",
+    "ClosedDate": "2010-04-09T07:42:50.487-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "All this needs is two tiny changes in LinqToObjects.php.\n \nFirst, change the handles() function to this:\n \npublic static function handles($source) {\n\treturn is_array($source) || $source instanceof Traversable;\n}\n \nAnd second, change the in() function to this:\n \npublic function in($source) {\n\tif($source instanceof Traversable) {\n\t\t$source = iterator_to_array($source);\n\t}\n \n\t$this->_data = $source;\n\treturn $this;\n}",
+    "LastUpdatedDate": "2013-05-16T03:12:35.79-07:00",
+    "PlannedForRelease": "PHPLinq 0.5.0",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "PHPLinq",
+    "ReportedDate": "2010-04-08T13:02:32-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Allow objects that implement Traversable to be passed to LinqToObjects",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 6286
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "632011",
+    "ThreadId": "262545",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>I was wondering how can I write in PHPLinq a query using COUNT? Something like:</p>\r\n<p><span style=\"font-size:11pt\">SELECT COUNT(cars.id) AS total_cars FROM cars</span></p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"font-size:11pt\">Thanks!</span></p>\r\n",
+    "PostedDate": "2011-06-23T11:14:26.647-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

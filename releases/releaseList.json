@@ -1,0 +1,98 @@
+[
+  {
+    "Id": "0",
+    "Name": "PHPLinq 0.3.0",
+    "DevelopmentStatus": "None",
+    "Description": "Changelog:\n- Feature:   Work item 1595 - Implement join operator\n- Feature:   Work item 2425 - Implement sum, min, max, average\n- Feature:   Work item 2426 - Implement single, singleOrDefault\n",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2008-07-17T11:13:05.383-07:00",
+    "Files": [
+      {
+        "Id": "25bf86a0-7945-466c-8173-94b92e316b7b",
+        "FileName": "0.3.0.zip",
+        "Url": "./0/25bf86a0-7945-466c-8173-94b92e316b7b",
+        "Type": "Source Code",
+        "UploadDate": "2008-07-17T11:13:05.587-07:00"
+      },
+      {
+        "Id": "6c34f2b6-db3f-41f7-8825-44969e41b0ac",
+        "FileName": "PHPLinq-0.3.0.tgz",
+        "Url": "./0/6c34f2b6-db3f-41f7-8825-44969e41b0ac",
+        "Type": "Source Code",
+        "UploadDate": "2008-06-23T05:31:23.023-07:00"
+      },
+      {
+        "Id": "af25326b-ab35-472b-bf59-bd17b41d692f",
+        "FileName": "Latest.zip",
+        "Url": "./0/af25326b-ab35-472b-bf59-bd17b41d692f",
+        "Type": "Source Code",
+        "UploadDate": "2008-07-17T11:13:05.57-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "1",
+    "Name": "PHPLinq 0.2.0",
+    "DevelopmentStatus": "None",
+    "Description": "- Feature:   Work item  757 - Implement distinct\n- Feature:   Work item  758 - Implement ofType\n- Feature:   Work item  762 - Compile expressions on execute\n- Feature:   Work item  787 - Implement any / all / contains\n- Feature:   Work item  759 - Implement reverse\n- Feature:   Work item  788 - Implement elementAt / count\n- Feature:   Work item  789 - Implement concat\n- Feature:   Work item  827 - Implement parameterless select()\n- Feature:   Work item  760 - Implement First / FirstOrDefault / Last / LastOrDefault\n- Feature:   Work item  756 - Implement takeWhile / skipWhile\n- Feature:   Work item 1109 - Implement from()->in() initiator\n- General:   Work item  761 - LinqToObjects initiator fallback should be \"linqfrom\"\n- General:   Work item  790 - Create PEAR package in release process",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2008-02-29T02:30:01.67-08:00",
+    "Files": [
+      {
+        "Id": "c5114aaf-0d84-490b-a123-f791e79fa5fc",
+        "FileName": "0.2.0.zip",
+        "Url": "./1/c5114aaf-0d84-490b-a123-f791e79fa5fc",
+        "Type": "Source Code",
+        "UploadDate": "2008-02-29T02:30:01.7-08:00"
+      },
+      {
+        "Id": "150a2d8f-9a70-4272-891d-f17e0bc58de9",
+        "FileName": "PHPLinq-0.2.0.tgz",
+        "Url": "./1/150a2d8f-9a70-4272-891d-f17e0bc58de9",
+        "Type": "Source Code",
+        "UploadDate": "2008-02-29T02:30:01.747-08:00"
+      }
+    ]
+  },
+  {
+    "Id": "2",
+    "Name": "PHPLinq 0.1.0",
+    "DevelopmentStatus": "None",
+    "Description": "Initial release",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2008-01-21T10:47:22.123-08:00",
+    "Files": [
+      {
+        "Id": "97e25c0a-ea9b-43c3-8aa6-6a4017986604",
+        "FileName": "0.1.0.zip",
+        "Url": "./2/97e25c0a-ea9b-43c3-8aa6-6a4017986604",
+        "Type": "Source Code",
+        "UploadDate": "2008-01-21T10:47:22.153-08:00"
+      }
+    ]
+  },
+  {
+    "Id": "3",
+    "Name": "PHPLinq 0.4.0",
+    "DevelopmentStatus": "Stable",
+    "Description": "2009/01/27 (v0.4.0):\n- Feature:   Work item 3535 - Implement ILinqProvider for Zend_Db_Table\n- Feature:   Work item 3615 - LinqToZendDB - Last query should be returned usign callback function\n- Bugfix:    Work item 2711 - \"Apache HTTP Server has stopped working\" when trying to run 11-join.php",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2009-01-26T23:49:32.233-08:00",
+    "Files": [
+      {
+        "Id": "6eb446d3-7c6a-4a95-9c6c-708a85b4a03f",
+        "FileName": "0.4.0.zip",
+        "Url": "./3/6eb446d3-7c6a-4a95-9c6c-708a85b4a03f",
+        "Type": "Application",
+        "UploadDate": "2009-01-26T23:49:31.717-08:00"
+      },
+      {
+        "Id": "39dba7c7-1003-4d9b-acea-b7f4c3d1a065",
+        "FileName": "PHPLinq-0.4.0.tgz",
+        "Url": "./3/39dba7c7-1003-4d9b-acea-b7f4c3d1a065",
+        "Type": "Application",
+        "UploadDate": "2009-01-26T23:49:31.967-08:00"
+      }
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "PHPLinq",
+      "DisplayName": "PHPLinq"
+    },
+    "ClosedComment": "Fixed in SVN",
+    "ClosedDate": "2008-02-10T23:34:05.747-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Create PEAR package in release process",
+    "LastUpdatedDate": "2013-05-16T03:12:37.533-07:00",
+    "PlannedForRelease": "PHPLinq 0.2.0",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "PHPLinq",
+    "ReportedDate": "2008-02-06T04:29:11.55-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Create PEAR package in release process",
+    "Type": {
+      "Name": "Task",
+      "Id": 2
+    },
+    "VoteCount": 1,
+    "Id": 790
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

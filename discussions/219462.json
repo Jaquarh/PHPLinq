@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "467395",
+    "ThreadId": "219462",
+    "Html": "<p>I'm trying to use PHPLinq for the first time but I'm getting the exception:&nbsp;</p>\r\n<p><em>No valid PHPLinq_ILinqProvider found for the specified data source.</em></p>\r\n<p>Am I doing something wrong?</p>\r\n<p>FYI,</p>\r\n<p>\r\n<div style=\"color:black;background-color:white\">\r\n<pre><span style=\"color:green\">/* site dir:<br>/index.php<br>/libraries/linq/<br>/libraries/linq/PHPLinq/<br>/libraries/linq/PHPLinq.php<br>*/</span>\r\n\r\n<span style=\"color:blue\">require_once</span>(JPATH_SITE.DS.<span style=\"color:#a31515\">'libraries'</span>.DS.<span style=\"color:#a31515\">'linq'</span>.DS.<span style=\"color:#a31515\">'PHPLinq'</span>.DS.<span style=\"color:#a31515\">'LinqToObjects.php'</span>);\r\n\r\n$events = loadEventsList(); <span style=\"color:green\">//returns an Array of (stdClass)$event</span>\r\n\r\n$result = from(<span style=\"color:#a31515\">'$event'</span>)-&gt;in(<span style=\"color:#a31515\">'$events'</span>)-&gt;select(<span style=\"color:#a31515\">'$event'</span>)-&gt;where(<span style=\"color:#a31515\">'$event =&gt; $event-&gt;City == 10'</span>);\r\n</pre>\r\n</div>\r\n</p>",
+    "PostedDate": "2010-07-14T11:24:15.04-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "468903",
+    "ThreadId": "219462",
+    "Html": "<p>Is this an array() or an ArrayObject? Can you try using the latest source code from the source code tab?</p>",
+    "PostedDate": "2010-07-19T01:33:27.217-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "491846",
+    "ThreadId": "219462",
+    "Html": "<p>That error happens when getting data not from an array, in your case this line '&quot; &nbsp;-&gt;in('$events') &quot;...</p>\r\n<p>Try removing the single&nbsp;quotes around the&nbsp;&nbsp;event variable. It will work, if that happens again, then your loadEventsList() is not returning a collection object..</p>",
+    "PostedDate": "2010-09-10T08:44:39.33-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

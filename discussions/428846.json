@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "983982",
+    "ThreadId": "428846",
+    "Html": "\r\n<p>I have a question like following codes. Please see the <strong>$var</strong> variable</p>\r\n<p>$array = array(1,2,3,4);<br>\r\n<strong>$var</strong> = 2;</p>\r\n<p><span>&nbsp;</span>$output = from('$it')<span> <br>\r\n</span>-&gt;in($array)<span> <br>\r\n</span>-&gt;where('$it=&gt;$it == <strong>$var</strong>')<span> <br>\r\n</span>-&gt;select();</p>\r\n<p>It throws an Exception,&nbsp;<strong>Undefined variable: var</strong></p>\r\n<p>is kind of query available in the framework?</p>\r\n<p>Thank you.</p>\r\n<p><strong></strong></p>\r\n",
+    "PostedDate": "2013-01-08T00:19:57.033-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "983987",
+    "ThreadId": "428846",
+    "Html": "\r\n<p>actually,&nbsp;<br>\r\ni got a tip: we can replace $var text by the value :D&nbsp;</p>\r\n",
+    "PostedDate": "2013-01-08T00:32:03.517-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

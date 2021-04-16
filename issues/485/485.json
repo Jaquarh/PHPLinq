@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "PHPLinq",
+      "DisplayName": "PHPLinq"
+    },
+    "ClosedComment": "Fixed in SVN",
+    "ClosedDate": "2008-01-21T10:49:18.833-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Create initial release",
+    "LastUpdatedDate": "2013-05-16T03:12:40.883-07:00",
+    "PlannedForRelease": "PHPLinq 0.1.0",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "PHPLinq",
+    "ReportedDate": "2008-01-21T10:48:49.613-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Initial release",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 485
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

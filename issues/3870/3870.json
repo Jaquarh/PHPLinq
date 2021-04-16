@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Investigate use of closures, allowing better parse-time error notifications.\n \nhttp://codeutopia.net/blog/2009/02/20/closures-coming-in-php-53-and-thats-a-good-thing/",
+    "LastUpdatedDate": "2013-02-14T13:40:37.84-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "PHPLinq",
+    "ReportedDate": "2009-02-22T23:34:11.75-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Investigate use of closures in PHPLinq",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 3870
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Check out the project created by me that uses closures: http://plinq.codeplex.com/",
+      "PostedDate": "2011-03-29T14:54:59.33-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "This has been something I always wanted to do, but... PHPLinq uses the string-based closures also for translating PHP code to SQL that is executed on your database. Is this possbile with native closures?",
+      "PostedDate": "2011-03-30T04:16:14.807-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-14T13:40:37.84-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

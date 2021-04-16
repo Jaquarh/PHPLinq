@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "The function elementAt in LinqToObjects assumes that it is dealing with an array of arrays. If the result from the query is not an array it returns null. This breaks this feature and the test. Also even if it is an array the current code pops the first element off the array and returns that. It should just return the nth element of the resultant sequence. Whatever that is.",
+    "LastUpdatedDate": "2013-02-14T13:40:37.297-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "PHPLinq",
+    "ReportedDate": "2011-02-25T20:05:37.657-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "elementAt (LinqToObjects) assumes it is dealing with an array of arrays",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 7960
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

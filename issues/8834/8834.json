@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "unsignedShort sorted like a string instead of a number...\n \n970\n96\n47\n450\n22\n \ninstead of the expected:\n970\n450\n96\n47\n22\n \nI addressed this in my copy of the code by using strnatcmp instead of strcmp as the default comparer in the OrderByExpression.php file.",
+    "LastUpdatedDate": "2013-02-14T13:40:37.03-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "PHPLinq",
+    "ReportedDate": "2011-10-18T10:18:58.937-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "unsignedShort sorted like a string instead of a number...",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 8834
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

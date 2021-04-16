@@ -1,0 +1,40 @@
+<div class="wikidoc"><table><tr><th> <a href="https://phplinq.codeplex.com/wikipage?referringTitle=Examples">Home</a> </th><th> <a href="https://phplinq.codeplex.com/wikipage?title=Features&referringTitle=Examples">Features</a> </th><th> <a href="https://phplinq.codeplex.com/wikipage?title=Requirements&referringTitle=Examples">Requirements</a> </th><th> <b><u>Examples</u></b> </th><th> <a href="https://phplinq.codeplex.com/wikipage?title=FAQ&referringTitle=Examples">FAQ</a> </th><th> <a href="https://phplinq.codeplex.com/wikipage?title=Contribute&referringTitle=Examples">Contribute</a> </th><th> <a href="https://phplinq.codeplex.com/wikipage?title=Credits&referringTitle=Examples">Credits</a> </th><th> <a href="https://phplinq.codeplex.com/wikipage?title=Contact&referringTitle=Examples">Contact</a> </th></tr></table><br />
+<h1>Examples</h1>Examples can be found in the test package in the latest release.<br />
+<h2>A basic example</h2>Let&#39;s say we have an array of strings and want to select only the strings whose length is &lt; 5. The PHPLinq way of achieving this would be the following: <br /><pre>
+// Create data source
+$names = array(&quot;John&quot;, &quot;Peter&quot;, &quot;Joe&quot;, &quot;Patrick&quot;, &quot;Donald&quot;, &quot;Eric&quot;); 
+
+$result = from(&#39;$name&#39;)-&gt;in($names)
+            -&gt;where(&#39;$name =&gt; strlen($name) &lt; 5&#39;)
+            -&gt;select(&#39;$name&#39;); 
+</pre><br /><br />Feels familiar to SQL? Yes indeed! No more writing a loop over this array, checking the string&#39;s length, and adding it to a temporary variable. <br /><br />You may have noticed something strange... What&#39;s that $name =&gt; strlen($name) &lt; 5 doing? This piece of code is compiled to an anonymous function or Lambda expression under the covers. This function accepts a parameter $name, and returns a boolean value based on the expression strlen($name) &lt; 5. <br />
+<h2>An advanced example</h2>There are lots of other examples available in the PHPLinq download, but here&#39;s an advanced one... Let&#39;s say we have an array of Employee objects. This array should be sorted by Employee name, then Employee age. We want only Employees whose name has a length of 4 characters. Next thing: we do not want an Employee instance in our result. Instead, the returning array should contain objects containing an e-mail address and a domain name. <br /><br />First of all, let&#39;s define our data source: <br /><pre>
+class Employee {
+    public $Name;
+    public $Email;
+    public $Age;
+
+    public function __construct($name, $email, $age) {
+        $this-&gt;Name     = $name;
+        $this-&gt;Email     = $email;
+        $this-&gt;Age        = $age;
+    }
+} 
+
+$employees = array(
+    new Employee(&#39;Maarten&#39;, &#39;maarten@example.com&#39;, 24),
+    new Employee(&#39;Paul&#39;, &#39;paul@example.com&#39;, 30),
+    new Employee(&#39;Bill&#39;, &#39;bill.a@example.com&#39;, 29),
+    new Employee(&#39;Bill&#39;, &#39;bill.g@example.com&#39;, 28),
+    new Employee(&#39;Xavier&#39;, &#39;xavier@example.com&#39;, 40)
+); 
+</pre><br /><br />Now for the PHPLinq query:<br /><pre>
+$result = from(&#39;$employee&#39;)-&gt;in($employees)
+            -&gt;where(&#39;$employee =&gt; strlen($employee-&gt;Name) == 4&#39;)
+            -&gt;orderBy(&#39;$employee =&gt; $employee-&gt;Name&#39;)
+            -&gt;thenByDescending(&#39;$employee =&gt; $employee-&gt;Age&#39;)
+            -&gt;select(&#39;new {
+                    &quot;EmailAddress&quot; =&gt; $employee-&gt;Email,
+                    &quot;Domain&quot; =&gt; substr($employee-&gt;Email, strpos($employee-&gt;Email, &quot;@&quot;) + 1)
+                  }&#39;); 
+</pre><br /><br />Again, you may have noticed something strange... What&#39;s this new { } thing doing? Actually, this is converted to an anonymous type under the covers. new { &quot;name&quot; =&gt; &quot;test&quot; } is evaluated to an object containing the property &quot;name&quot; with a value of &quot;test&quot;. </div><div class="ClearBoth"></div>

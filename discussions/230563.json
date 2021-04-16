@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "505949",
+    "ThreadId": "230563",
+    "Html": "<p>I'm really at lost finding a solution to my problem. How do I transform this SQL to PHPLinq?</p>\r\n<p>SELECT *<br>FROM [dbo].[Customers] AS [t0]<br>WHERE [t0].[CustomerID] NOT IN (<br>&nbsp;&nbsp;&nbsp; SELECT [t1].[CustomerID]<br>&nbsp;&nbsp;&nbsp; FROM [dbo].[Orders] AS [t1]<br>)</p>",
+    "PostedDate": "2010-10-12T04:39:24.943-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "505981",
+    "ThreadId": "230563",
+    "Html": "<p>hHis one is possible with PHPLinq but the query will not be optimized. Instead, PHPLinq in its current implementation will read all orders and all customers into memory. Therefore I think it's best to just execute this query natively on the database and fetch the results in PHP.</p>",
+    "PostedDate": "2010-10-12T05:59:05.143-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

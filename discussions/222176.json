@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "475429",
+    "ThreadId": "222176",
+    "Html": "<p>Here is my example</p>\r\n<p>class Person{</p>\r\n<p>&nbsp;&nbsp;&nbsp; public&nbsp; $name;</p>\r\n<p>&nbsp;&nbsp;&nbsp; public&nbsp; $items = array();</p>\r\n<p>}</p>\r\n<p>class Item{</p>\r\n<p>public $itemName;</p>\r\n<p>public $itemId;</p>\r\n<p>public __construcy($itmName, $itmId){</p>\r\n<p>$this-&gt;itemName = $itmName;</p>\r\n<p>$this-&gt;itemId = $itmId;</p>\r\n<p>}</p>\r\n<p>}</p>\r\n<p>$person1 = new Person();</p>\r\n<p>$person2 = new Person();</p>\r\n<p>$person1-&gt;items[] = new Item(12,&quot;key 1&quot;);</p>\r\n<p>$person1-&gt;items[] = new Item(13,&quot;key 2&quot;);</p>\r\n<p>$person2-&gt;items[] = new Item(12,&quot;key 3&quot;);</p>\r\n<p>$person2-&gt;items[] = new Item(13,&quot;key 4&quot;);</p>\r\n<p>$personArray = array($person1, $person2);</p>\r\n<p>In c#, to get the Person with &quot;key 1&quot;, I usually do something like this:</p>\r\n<p>&nbsp;</p>\r\n<p>var result = from i in persons<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; where i.Items.Exists(delegate(Item t){<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; return t.ItemName == &quot;key 1&quot;;<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; })<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; select i;</p>\r\n<p>My question now is that how do I do these on php linq? Any kind of help/comment would help..</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-08-02T06:25:54.083-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "475848",
+    "ThreadId": "222176",
+    "Html": "<p>Can you try something like this:</p>\r\n<p>$result = from('$i')-&gt;in($persons)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt;where('$i =&gt; from(\\'$item\\')-&gt;in($i-&gt;items)-&gt;any(\\'$item =&gt; $item-&gt;ItemName == &quot;key1&quot;\\')')<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt;select('$i');</p>",
+    "PostedDate": "2010-08-03T02:55:41.07-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "483495",
+    "ThreadId": "222176",
+    "Html": "<p>Hi,</p>\r\n<p>This code worked, my only problem now is speed, its a a bit slow when searching inside sub-collections. The site that I'am&nbsp;</p>\r\n<p>currently working on has 127 products, takes 16 seconds to load a page while finding a specific item... Got an idea how to optimize</p>\r\n<p>the code better?</p>\r\n<p>Thanks, And good job by the way</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-08-23T02:14:33.143-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "494948",
+    "ThreadId": "222176",
+    "Html": "<p>I stand corrected, Its fast, I had a bug in my code that it always&nbsp; fetch from the db instead of fetching from the cache... People should use, phplinq, its so fast in getting 1000 - 5000 rows of in memory data, I tried it... Will post back more when that data goes 10000.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-09-17T06:20:47.34-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "495836",
+    "ThreadId": "222176",
+    "Html": "<p>Interested in these results :-)</p>",
+    "PostedDate": "2010-09-20T00:59:29.62-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "in c# linq\nfrom o in arr select new {o.Title};\nresult:\na list of class that contain property : Title\nbut in php linq\nfrom('$o')->in($arr)->select('new {$o->Title}');\nresult:\na array of class that contain property : 0\ni must change code to:\nfrom('$o')->in($arr)->select('new {\"Title\"=>$o->Title}');",
+    "LastUpdatedDate": "2013-02-14T13:40:36.49-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "PHPLinq",
+    "ReportedDate": "2011-12-26T09:14:57.827-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "set property name in select",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 9060
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

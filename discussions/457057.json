@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1093119",
+    "ThreadId": "457057",
+    "Html": "Hello together,<br />\nis there a way to joining array in this form ?<br />\nA: <br />\nSchema: Array([0] =&gt; 'name', [1] =&gt; 'age');<br />\nData:  Array ([0] =&gt; array( [0]=&gt; 'John', [1] =&gt; 30), ...)<br />\n<br />\nB:<br />\nSchema: Array([0] =&gt; 'name', [1] =&gt; 'email');<br />\nData:  Array ([0] =&gt; array( [0]=&gt; 'John', [1] =&gt; 'johnexample.com'), ...)<br />\n<br />\nI would not convert the entries to Objects.<br />\n",
+    "PostedDate": "2013-09-16T07:35:06.997-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1093421",
+    "ThreadId": "457057",
+    "Html": "No answer it's mean, it's not possible or just no answer?<br />\n",
+    "PostedDate": "2013-09-17T01:36:29.337-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

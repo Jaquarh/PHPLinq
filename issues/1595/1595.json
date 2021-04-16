@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "PHPLinq",
+      "DisplayName": "PHPLinq"
+    },
+    "ClosedComment": "Fixed in SVN",
+    "ClosedDate": "2008-03-31T11:48:22.297-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Implement join operator.\n \nExample syntax would be:\n \n-------------------------------------------------------------------------\n \n// Combine data\n$result = from('$employee')->in($employees)\n\t\t\t->join('$department')->in($departments)->on('$employee, $department => $employee->DepartmentId == $department->Id')\n\t\t\t->join('$manager')->in($employees)->on('$employee, $manager => $employee->ManagerId > 0 && $employee->ManagerId == $manager->Id')\n\t\t\t->select('$employee, $department, $manager => new {\n\t\t\t\t\t\t\t\"Name\" => $employee->Name,\n\t\t\t\t\t\t\t\"Email\" => $employee->Email,\n\t\t\t\t\t\t\t\"Department\" => $department->Name,\n\t\t\t\t\t\t\t\"Manager\" => $manager->Name\n\t\t\t\t\t  }');\n \nprint_r($result);",
+    "LastUpdatedDate": "2013-05-16T03:12:37.06-07:00",
+    "PlannedForRelease": "PHPLinq 0.3.0",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "PHPLinq",
+    "ReportedDate": "2008-03-31T11:44:39.267-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Implement join operator",
+    "Type": {
+      "Name": "Task",
+      "Id": 2
+    },
+    "VoteCount": 1,
+    "Id": 1595
+  },
+  "FileAttachments": [],
+  "Comments": []
+}
